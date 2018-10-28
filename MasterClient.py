@@ -5,12 +5,13 @@ import sys
 import time
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-IP_address = '172.16.54.254'
+IP_address = '127.0.0.1'
 Port = 2004
 acc = ['firefox','shutdown','gedit']
 
 while True:
     try:
+        server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         server.connect((IP_address, Port))
 
         while True:
@@ -21,7 +22,8 @@ while True:
 
             for socks in read_sockets:
                 if socks == server:
-                    continue
+                		raise Exception("NOT VALID")
+                		continue
 
                 else:
                     command = sys.stdin.readline()

@@ -5,7 +5,7 @@ from thread import *
 shutdownServer = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 shutdownServer.setsockopt(socket.SOL_SOCKET,socket.SO_REUSEADDR,1)
 
-IP_address = '172.16.54.254'
+IP_address = '0.0.0.0'
 Port = 2004
 
 shutdownServer.bind((IP_address,Port))
