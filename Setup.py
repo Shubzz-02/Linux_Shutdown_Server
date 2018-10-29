@@ -55,5 +55,4 @@ if start():
 
 
 
-'https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/sect-managing_services_with_systemd-unit_files'
-'https://linuxconfig.org/how-to-automatically-execute-shell-script-at-startup-boot-on-systemd-linux'
+
