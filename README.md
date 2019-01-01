@@ -19,7 +19,7 @@ Shutdown all slave linux system connected to same network.
           Description=Shutdown Server Service
           After=dbus.service
           [Service]
-          ExecStart=/usr/local/bin/node.py
+          ExecStart=/usr/local/bin/ShutdownServer.py
           [Install]
           WantedBy=default.target
        ```
